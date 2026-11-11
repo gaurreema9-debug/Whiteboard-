@@ -1,0 +1,6 @@
+{
+  "name": "Whiteboard India Edition",
+  "description": "Learn • Draw • Teach. Free all-in-one digital whiteboard, PDF annotation, notes, and teaching tools suite for educators and students in India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
