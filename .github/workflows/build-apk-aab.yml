@@ -47,7 +47,6 @@ jobs:
         run: |
           if [ ! -f .env ]; then
             touch .env
-            echo "GEMINI_API_KEY=" >> .env
           fi
 
       - name: Ensure google-services.json exists
