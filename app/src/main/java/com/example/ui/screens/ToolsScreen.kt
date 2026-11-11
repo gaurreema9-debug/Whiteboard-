@@ -18,10 +18,11 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowForwardIos
+import androidx.compose.material.icons.automirrored.filled.EventNote
+import androidx.compose.material.icons.automirrored.outlined.AltRoute
 import androidx.compose.material.icons.filled.Calculate
 import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.Draw
-import androidx.compose.material.icons.filled.EventNote
 import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.PictureAsPdf
 import androidx.compose.material.icons.filled.PresentToAll
@@ -31,7 +32,6 @@ import androidx.compose.material.icons.filled.SquareFoot
 import androidx.compose.material.icons.filled.Style
 import androidx.compose.material.icons.filled.Videocam
 import androidx.compose.material.icons.outlined.AccountTree
-import androidx.compose.material.icons.outlined.AltRoute
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -84,7 +84,7 @@ fun ToolsScreen(
             tools = listOf(
                 SectionToolItem("tool_new_wb", "tool_new_wb_desc", Icons.Default.Draw, AppScreen.WHITEBOARD, PrimaryBlue),
                 SectionToolItem("tool_mindmap", "tool_mindmap_desc", Icons.Outlined.AccountTree, AppScreen.MIND_MAP, SecondaryTeal),
-                SectionToolItem("tool_flowchart", "tool_flowchart_desc", Icons.Outlined.AltRoute, AppScreen.FLOWCHART, Color(0xFF4F46E5)),
+                SectionToolItem("tool_flowchart", "tool_flowchart_desc", Icons.AutoMirrored.Outlined.AltRoute, AppScreen.FLOWCHART, Color(0xFF4F46E5)),
                 SectionToolItem("tool_templates", "tool_templates_desc", Icons.Default.Style, AppScreen.TEMPLATES_GALLERY, Color(0xFFD97706))
             )
         ),
@@ -104,7 +104,7 @@ fun ToolsScreen(
                 SectionToolItem("tool_presentation", "tool_presentation_desc", Icons.Default.PresentToAll, AppScreen.PRESENTATION, PrimaryBlue),
                 SectionToolItem("tool_screen_rec", "tool_screen_rec_desc", Icons.Default.Videocam, AppScreen.SCREEN_RECORDER, Color(0xFFE11D48)),
                 SectionToolItem("tool_voice_rec", "tool_voice_rec_desc", Icons.Default.Mic, AppScreen.VOICE_RECORDER, Color(0xFF9333EA)),
-                SectionToolItem("tool_planner", "tool_planner_desc", Icons.Default.EventNote, AppScreen.LESSON_PLANNER, Color(0xFF0D9488))
+                SectionToolItem("tool_planner", "tool_planner_desc", Icons.AutoMirrored.Filled.EventNote, AppScreen.LESSON_PLANNER, Color(0xFF0D9488))
             )
         ),
         ToolSection(

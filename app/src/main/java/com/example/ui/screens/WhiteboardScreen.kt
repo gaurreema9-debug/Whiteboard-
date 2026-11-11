@@ -22,6 +22,8 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.NavigateBefore
+import androidx.compose.material.icons.automirrored.filled.NavigateNext
 import androidx.compose.material.icons.automirrored.filled.Redo
 import androidx.compose.material.icons.automirrored.filled.Undo
 import androidx.compose.material.icons.filled.Add
@@ -31,8 +33,6 @@ import androidx.compose.material.icons.filled.Download
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.GridView
 import androidx.compose.material.icons.filled.Highlight
-import androidx.compose.material.icons.filled.NavigateBefore
-import androidx.compose.material.icons.filled.NavigateNext
 import androidx.compose.material.icons.outlined.CleaningServices
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -556,7 +556,7 @@ fun WhiteboardScreen(
                             enabled = currentPage > 1,
                             modifier = Modifier.size(32.dp)
                         ) {
-                            Icon(Icons.Default.NavigateBefore, contentDescription = "Previous Page")
+                            Icon(Icons.AutoMirrored.Filled.NavigateBefore, contentDescription = "Previous Page")
                         }
                         Text(
                             text = "$currentPage/$totalPages",
@@ -567,7 +567,7 @@ fun WhiteboardScreen(
                             enabled = currentPage < totalPages,
                             modifier = Modifier.size(32.dp)
                         ) {
-                            Icon(Icons.Default.NavigateNext, contentDescription = "Next Page")
+                            Icon(Icons.AutoMirrored.Filled.NavigateNext, contentDescription = "Next Page")
                         }
                         IconButton(
                             onClick = { viewModel.addNewPage() },

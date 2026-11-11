@@ -63,8 +63,6 @@ fun WhiteboardIndiaTheme(
         SideEffect {
             val window = (view.context as? Activity)?.window
             window?.let {
-                it.statusBarColor = colorScheme.background.toArgb()
-                it.navigationBarColor = colorScheme.surface.toArgb()
                 val insetsController = WindowCompat.getInsetsController(it, view)
                 insetsController.isAppearanceLightStatusBars = !darkTheme
                 insetsController.isAppearanceLightNavigationBars = !darkTheme

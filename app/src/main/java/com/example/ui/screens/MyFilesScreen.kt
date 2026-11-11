@@ -18,10 +18,11 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.EventNote
+import androidx.compose.material.icons.automirrored.outlined.AltRoute
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.Draw
-import androidx.compose.material.icons.filled.EventNote
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.FolderOpen
@@ -29,7 +30,6 @@ import androidx.compose.material.icons.filled.PictureAsPdf
 import androidx.compose.material.icons.filled.Quiz
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.outlined.AccountTree
-import androidx.compose.material.icons.outlined.AltRoute
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -251,8 +251,8 @@ fun FileListItemCard(
                         FileType.NOTE -> Icons.Default.Description
                         FileType.QUIZ -> Icons.Default.Quiz
                         FileType.MIND_MAP -> Icons.Outlined.AccountTree
-                        FileType.FLOWCHART -> Icons.Outlined.AltRoute
-                        FileType.LESSON -> Icons.Default.EventNote
+                        FileType.FLOWCHART -> Icons.AutoMirrored.Outlined.AltRoute
+                        FileType.LESSON -> Icons.AutoMirrored.Filled.EventNote
                     },
                     contentDescription = file.type.name,
                     tint = Color(android.graphics.Color.parseColor(file.thumbnailColorHex)),

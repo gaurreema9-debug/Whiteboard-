@@ -22,11 +22,12 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
+import androidx.compose.material.icons.automirrored.filled.EventNote
+import androidx.compose.material.icons.automirrored.outlined.AltRoute
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Calculate
 import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.Draw
-import androidx.compose.material.icons.filled.EventNote
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.Folder
@@ -39,7 +40,6 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.SquareFoot
 import androidx.compose.material.icons.filled.Videocam
 import androidx.compose.material.icons.outlined.AccountTree
-import androidx.compose.material.icons.outlined.AltRoute
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -111,12 +111,12 @@ fun HomeScreen(
         HomeToolCardItem("geometry", "tool_geometry", "tool_geometry_desc", Icons.Default.SquareFoot, AppScreen.GEOMETRY_TOOLS, "MATH", Color(0xFF0284C7)),
         HomeToolCardItem("ocr", "tool_ocr", "tool_ocr_desc", Icons.Default.Scanner, AppScreen.OCR_SCANNER, "AI/ML", Color(0xFFD97706)),
         HomeToolCardItem("mindmap", "tool_mindmap", "tool_mindmap_desc", Icons.Outlined.AccountTree, AppScreen.MIND_MAP, null, SecondaryTeal),
-        HomeToolCardItem("flowchart", "tool_flowchart", "tool_flowchart_desc", Icons.Outlined.AltRoute, AppScreen.FLOWCHART, null, Color(0xFF4F46E5)),
+        HomeToolCardItem("flowchart", "tool_flowchart", "tool_flowchart_desc", Icons.AutoMirrored.Outlined.AltRoute, AppScreen.FLOWCHART, null, Color(0xFF4F46E5)),
         HomeToolCardItem("quiz", "tool_quiz", "tool_quiz_desc", Icons.Default.Quiz, AppScreen.QUIZ_MAKER, "TEST", Color(0xFFEA580C)),
         HomeToolCardItem("presentation", "tool_presentation", "tool_presentation_desc", Icons.Default.PresentToAll, AppScreen.PRESENTATION, "CLASS", PrimaryBlue),
         HomeToolCardItem("screen_rec", "tool_screen_rec", "tool_screen_rec_desc", Icons.Default.Videocam, AppScreen.SCREEN_RECORDER, "REC", Color(0xFFE11D48)),
         HomeToolCardItem("voice_rec", "tool_voice_rec", "tool_voice_rec_desc", Icons.Default.Mic, AppScreen.VOICE_RECORDER, "AUDIO", Color(0xFF9333EA)),
-        HomeToolCardItem("planner", "tool_planner", "tool_planner_desc", Icons.Default.EventNote, AppScreen.LESSON_PLANNER, "PLAN", Color(0xFF0D9488))
+        HomeToolCardItem("planner", "tool_planner", "tool_planner_desc", Icons.AutoMirrored.Filled.EventNote, AppScreen.LESSON_PLANNER, "PLAN", Color(0xFF0D9488))
     )
 
     LazyColumn(
@@ -421,8 +421,8 @@ fun RecentFileCard(
                             FileType.NOTE -> Icons.Default.Description
                             FileType.QUIZ -> Icons.Default.Quiz
                             FileType.MIND_MAP -> Icons.Outlined.AccountTree
-                            FileType.FLOWCHART -> Icons.Outlined.AltRoute
-                            FileType.LESSON -> Icons.Default.EventNote
+                            FileType.FLOWCHART -> Icons.AutoMirrored.Outlined.AltRoute
+                            FileType.LESSON -> Icons.AutoMirrored.Filled.EventNote
                         },
                         contentDescription = file.type.name,
                         tint = Color(android.graphics.Color.parseColor(file.thumbnailColorHex)),
